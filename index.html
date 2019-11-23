@@ -8,12 +8,16 @@
   <meta name="description" content="Conversion Calculator implemented using Progressive Web App">
   <title>Conversion Calculator</title>
 
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <!-- Link Manifest -->
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="theme-color" content="#333" />
+
+  <link rel="shortcut icon" href="./assets/images/icons/icon-24.png" type="image/x-icon">
   <link rel="stylesheet" href="./assets/styles/app.css">
 </head>
 
 <body>
-  <h1>Hello</h1>
+  <!-- <h1>Hello</h1> -->
   <div class="container">
     <div class="row">
       <div class="col-md-6 offset-md-3">
@@ -22,8 +26,8 @@
         </h1>
         <form>
           <div class="form-group">
-            <input type="number" class="form-control form-control-lg" id="lbsInput" placeholder="Enter pounds.."
-              required>
+            <input type="number" aria-label="input number" class="form-control form-control-lg" id="lbsInput"
+              placeholder="Enter pounds.." required>
           </div>
         </form>
         <div id="output">
