@@ -17,46 +17,55 @@
 </head>
 
 <body>
-  <!-- <h1>Hello</h1> -->
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 offset-md-3">
-        <h1 class="display-4 text-center mb-3">
-          Conversion Calculator
-        </h1>
-        <form>
-          <div class="form-group">
-            <input type="number" aria-label="input number" class="form-control form-control-lg" id="lbsInput"
-              placeholder="Enter pounds.." required>
+  <div class="container is-fluid">
+    <!-- Header -->
+    <h1 class="title is-1 has-text-white has-text-centered">Conversion Calculator</h1>
+    <!-- Container -->
+    <div class="container is-fluid has-text-centered">
+      <!-- Select Conversion Container -->
+      <div class="field">
+        <div class="control has-icons-left">
+          <div class="select is-rounded full-width">
+            <select id="convert" class="full-width">
+              <option>Select dropdown</option>
+              <option>With options</option>
+            </select>
           </div>
-        </form>
-        <div id="output">
-          <div class="card bg-primary mb-2">
-            <div class="card-block">
-              <h4>Grams:</h4>
-              <div id="gOutput"></div>
-            </div>
+          <div class="icon is-small is-left">
+            <i class="fas fa-balance-scale-right"></i>
           </div>
-
-          <div class="card bg-success mb-2">
-            <div class="card-block">
-              <h4>Kilograms:</h4>
-              <div id="kgOutput"></div>
-            </div>
+        </div>
+      </div>
+      <!-- Sub-selection of conversion -->
+      <div class="columns is-vcentered">
+        <!-- Left column -->
+        <div class="column">
+          <input id="from-input-value" class="input is-rounded" type="number" placeholder="Input value">
+          <div class="select is-rounded full-width">
+            <select id="from-unit" class="full-width">
+              <option>Select dropdown</option>
+              <option>With options</option>
+            </select>
           </div>
-
-          <div class="card bg-danger mb-2">
-            <div class="card-block">
-              <h4>Ounces:</h4>
-              <div id="ozOutput"></div>
-            </div>
+        </div>
+        <!-- Middle column -->
+        <div class="column is-1 has-text-centered has-text-white is-size-3"> = </div>
+        <!-- Right column -->
+        <div class="column">
+          <input id="to-input-value" class="input is-rounded" type="number" placeholder="Input value">
+          <div class="select is-rounded full-width">
+            <select id="to-unit" class="full-width">
+              <option>Select dropdown</option>
+              <option>With options</option>
+            </select>
           </div>
         </div>
       </div>
     </div>
   </div>
+  </div>
 
-  <script src="./assets/scripts/app.js"></script>
+  <script src="./assets/scripts/app.js" type="module"></script>
 </body>
 
 </html>

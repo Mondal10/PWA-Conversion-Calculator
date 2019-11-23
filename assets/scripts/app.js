@@ -1,27 +1,33 @@
-console.log('Hello');
+import { initialize } from './modules/initialize.js';
 
-const input = document.getElementById('lbsInput');
-const output = document.getElementById('output');
+window.onload = () => {
+  initialize();
+}
 
-output.style.visibility = 'hidden';
+// const input = document.getElementById('lbsInput');
+// const output = document.getElementById('output');
 
-input.addEventListener('input', (e) => {
-  let lbs = e.target.value;
+// output.style.visibility = 'hidden';
 
-  output.style.visibility = 'visible';
+// input.addEventListener('input', (e) => {
+//   let lbs = e.target.value;
 
-  let grams = document.getElementById('gOutput');
-  grams.innerHTML = lbs / 0.0022046;
+//   output.style.visibility = 'visible';
 
-  let kiloGrams = document.getElementById('kgOutput');
-  kiloGrams.innerHTML = lbs / 2.2046;
+//   let grams = document.getElementById('gOutput');
+//   grams.innerHTML = lbs / 0.0022046;
 
-  let ounces = document.getElementById('ozOutput');
-  ounces.innerHTML = lbs * 16;
+//   let kiloGrams = document.getElementById('kgOutput');
+//   kiloGrams.innerHTML = lbs / 2.2046;
 
-  e.preventDefault();
-});
+//   let ounces = document.getElementById('ozOutput');
+//   ounces.innerHTML = lbs * 16;
 
+//   e.preventDefault();
+// });
+
+
+// Registering Service Worker
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('../serviceWorker.js').then((registration) => {
