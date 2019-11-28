@@ -1,0 +1,38 @@
+{
+    "length": {
+        "conversions": [
+            "meter",
+            "kilometer",
+            "centimeter",
+            "millimeter",
+            "micrometer",
+            "nanometer",
+            "mile",
+            "yard",
+            "foot",
+            "inch",
+            "light-year"
+        ]
+    },
+    "weight": {
+        "conversions": [
+            "kilogram",
+            "gram",
+            "milligram",
+            "metric-ton",
+            "long-ton",
+            "short-ton",
+            "pound",
+            "ounce",
+            "carrat",
+            "atomic-mass-unit"
+        ]
+    },
+    "temperature": {
+        "conversions": [
+            "celsius",
+            "kelvin",
+            "fahrenheit"
+        ]
+    }
+}

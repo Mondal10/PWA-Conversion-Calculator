@@ -1,7 +1,9 @@
-import { initialize } from './modules/initialize.js';
+import { initialize } from './Modules/initialize.js';
 
 window.onload = () => {
-  initialize();
+  fetch('../../assets/data/conversionData.json')
+    .then(response => response.json())
+    .then(data => initialize(data))
 }
 
 // const input = document.getElementById('lbsInput');
