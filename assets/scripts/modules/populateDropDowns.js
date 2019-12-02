@@ -1,18 +1,17 @@
 import { Utility } from '../Utils/utilityFunctions.js';
+import { calculate } from '../Modules/calculate.js';
 
 const { toCapitalize } = Utility;
 
 export const populateDropDowns = (data) => {
-  // DropDowns
+  // DropDown Elements
   const conversionSelect = document.querySelector('#convert');
   const fromUnitSelect = document.querySelector('#from-unit');
   const toUnitSelect = document.querySelector('#to-unit');
 
-  // Inputs
+  // Input Elements
   const fromUnitInput = document.querySelector('#from-input-value');
   const toUnitInput = document.querySelector('#to-input-value');
-
-// For inputs and sub-select fields call the same change calculating function
 
   // Populate Conversion Drop-Downs
   Object.keys(data).forEach(option => {
@@ -65,9 +64,9 @@ export const populateDropDowns = (data) => {
   };
 
   conversionSelect.addEventListener('change', conversionChange);
-  fromUnitSelect.addEventListener('change', (evt)=>{console.log(evt.target.value)});
-  toUnitSelect.addEventListener('change', (evt)=>{console.log(evt.target.value)});
+  fromUnitSelect.addEventListener('change', calculate);
+  toUnitSelect.addEventListener('change', calculate);
 
-  fromUnitInput.addEventListener('input', (evt)=>{console.log(evt.target.value)});
-  toUnitInput.addEventListener('input', (evt)=>{console.log(evt.target.value)});
+  fromUnitInput.addEventListener('input', calculate);
+  toUnitInput.addEventListener('input', calculate);
 };
