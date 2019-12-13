@@ -41,7 +41,7 @@ export const populateDropDowns = (data) => {
     }
 
     fromUnitInput.disabled = false;
-    toUnitInput.disabled = false;
+    // toUnitInput.disabled = false;
 
     let allOptions = '';
 
