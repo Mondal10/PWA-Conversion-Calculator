@@ -1,4 +1,5 @@
 import { temperature } from '../Calculations/temperature.js';
+import { length } from '../Calculations/lenght.js';
 
 export const calculate = (evt) => {
     // DropDown Elements
@@ -18,7 +19,7 @@ export const calculate = (evt) => {
     };
 
     if (conversionSelect.value === 'length') {
-        console.log('::::::::::');
+        length(inputData);
     } else if (conversionSelect.value === 'weight') {
         console.log('::::::::::');
     } else if (conversionSelect.value === 'temperature') {
