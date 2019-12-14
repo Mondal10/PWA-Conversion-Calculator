@@ -1,5 +1,5 @@
 import { Utility } from '../Utils/utilityFunctions.js';
-import { calculate } from '../Modules/calculate.js';
+import { calculate } from './calculate.js';
 
 const { toCapitalize } = Utility;
 
@@ -27,6 +27,9 @@ export const populateDropDowns = (data) => {
   const conversionChange = (evt) => {
     const { value } = evt.target;
 
+    fromUnitInput.value = '';
+    toUnitInput.value = '';
+
     populateMetricOption(value);
   };
 
@@ -35,9 +38,9 @@ export const populateDropDowns = (data) => {
     toUnitSelect.innerHTML = '';
 
     if (value === 'none') {
-        fromUnitInput.disabled = true;
-        toUnitInput.disabled = true;
-        return;
+      fromUnitInput.disabled = true;
+      toUnitInput.disabled = true;
+      return;
     }
 
     fromUnitInput.disabled = false;
