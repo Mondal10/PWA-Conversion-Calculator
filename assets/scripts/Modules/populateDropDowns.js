@@ -20,6 +20,11 @@ export const populateDropDowns = (data) => {
     conversionOption.text = toCapitalize(option);
     conversionOption.value = option;
 
+    // Temporary check to disable conversions which are dev
+    if (option === 'weight' || option === 'length') {
+      conversionOption.disabled = true;
+    }
+
     conversionSelect.add(conversionOption);
   });
 
