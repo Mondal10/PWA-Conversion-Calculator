@@ -34,5 +34,14 @@
             "kelvin",
             "fahrenheit"
         ]
+    },
+    "pressure": {
+        "conversions": [
+            "atmosphere",
+            "bar",
+            "pascal",
+            "pound-force-per-square-inch",
+            "torr"
+        ]
     }
 }
