@@ -1,6 +1,7 @@
 import { temperature } from '../Calculations/temperature.js';
 import { length } from '../Calculations/lenght.js';
 import { pressure } from '../Calculations/pressure.js';
+import { frequency } from '../Calculations/frequency.js';
 
 export const calculate = (evt) => {
     // DropDown Elements
@@ -27,6 +28,8 @@ export const calculate = (evt) => {
         temperature(inputData);
     } else if (conversionSelect.value === 'pressure') {
         pressure(inputData);
+    } else if (conversionSelect.value === 'frequency') {
+        frequency(inputData);
     }
 
     // console.log(conversionSelect.value)

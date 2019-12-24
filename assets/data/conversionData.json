@@ -43,5 +43,13 @@
             "pound-force-per-square-inch",
             "torr"
         ]
+    },
+    "frequency": {
+        "conversions": [
+            "hertz",
+            "kilohertz",
+            "megahertz",
+            "gigahertz"
+        ]
     }
 }
