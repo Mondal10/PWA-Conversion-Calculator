@@ -51,5 +51,11 @@
             "megahertz",
             "gigahertz"
         ]
+    },
+    "fuel-economy": {
+        "conversions": [
+            "kilometer-per-litre",
+            "litre-per-100-kilometers"
+        ]
     }
 }

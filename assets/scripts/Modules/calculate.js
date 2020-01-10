@@ -2,6 +2,7 @@ import { temperature } from '../Calculations/temperature.js';
 import { length } from '../Calculations/lenght.js';
 import { pressure } from '../Calculations/pressure.js';
 import { frequency } from '../Calculations/frequency.js';
+import { fuelEconomy } from '../Calculations/fuelEconomy.js';
 
 export const calculate = (evt) => {
     // DropDown Elements
@@ -30,6 +31,8 @@ export const calculate = (evt) => {
         pressure(inputData);
     } else if (conversionSelect.value === 'frequency') {
         frequency(inputData);
+    } else if (conversionSelect.value === 'fuel-economy') {
+        fuelEconomy(inputData);
     }
 
     // console.log(conversionSelect.value)
